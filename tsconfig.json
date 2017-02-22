@@ -1,0 +1,22 @@
+{
+    "files": [
+        "src/main.ts",
+        "src/app.component.ts",
+        "src/app.component.spec.ts",
+        "src/app.module.ts",
+        "src/libs.ts"
+
+    ],
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "lib": [ "es2015", "dom" ],
+      "noImplicitAny": true,
+      "suppressImplicitAnyIndexErrors": true
+    }
+
+}
