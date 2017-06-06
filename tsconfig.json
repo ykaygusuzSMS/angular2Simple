@@ -16,7 +16,16 @@
       "experimentalDecorators": true,
       "lib": [ "es2015", "dom" ],
       "noImplicitAny": true,
-      "suppressImplicitAnyIndexErrors": true
+      "suppressImplicitAnyIndexErrors": true,
+      "types": [
+            // add node as an option
+            "node"
+         ],
+         "typeRoots": [
+           // add path to @types
+           "node_modules/@types"
+        ],
+        experimentalDecorators:true
     }
 
 }
