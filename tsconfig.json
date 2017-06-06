@@ -19,13 +19,12 @@
       "suppressImplicitAnyIndexErrors": true,
       "types": [
             // add node as an option
-            "node"
+            "node","jasmine"
          ],
          "typeRoots": [
            // add path to @types
            "node_modules/@types"
-        ],
-        experimentalDecorators:true
+        ]
     }
 
 }
