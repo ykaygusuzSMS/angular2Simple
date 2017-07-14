@@ -8,9 +8,9 @@ import { TokenService } from './token.service';
   templateUrl: `login.component.html`
 })
 export class LoginComponent  implements OnInit {
-  name = 'Angular';
+name = 'Angular';
 consumerKey = '3MVG9ZL0ppGP5UrC2bHvPERv3LXM7sGLwzoZXko_PV5wmS1MbC3Vy3CJqcUrUBsL6AGRxMAEcaVB5_Kk_dxEi';
-token = '';
+
 constructor(
   private route: ActivatedRoute,
   private tokenService: TokenService
@@ -20,7 +20,9 @@ this.route.fragment
   .subscribe(params => {
     if(params){
       this.tokenService.setToken(params.match(/^(.*?)&/)[1].replace('access_token=', ''));
+      console.log(this.tokenService.getProfile().subscribe(profiles =>console.log(profiles)));
     }
+
 }
     );
 }

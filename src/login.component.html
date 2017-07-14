@@ -1,6 +1,7 @@
-  <div *ngIf="!token">
+  <div *ngIf="!tokenService.getToken()">
     <button (click)="login()">Login</button>
   </div>
-  <div *ngIf="token">
-    Already Logged in 
+  <div *ngIf="tokenService.getToken()">
+    {{tokenService.getProfile().name}}
+    
   </div>
