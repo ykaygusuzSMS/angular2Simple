@@ -26,6 +26,6 @@ this.route.fragment
 }
 
 login(): void {
-  window.location.href = 'https://login.salesforce.com/services/oauth2/authorize?response_type=token&client_id='+this.consumerKey+'&redirect_uri='+location.host+'/#/login/?';
+  window.location.href = 'https://login.salesforce.com/services/oauth2/authorize?response_type=token&client_id='+this.consumerKey+'&redirect_uri=https://'+location.host+'/#/login/?';
 }
 }
