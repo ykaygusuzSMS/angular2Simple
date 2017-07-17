@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "webpack": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail ",
-    "start": "webpack-dev-server --inline --progress --port 4200",
-    "build": "webpack --config config/webpack.prod.js --progress --profile --bail",
-    "runServer": "node server.js",
+    "startDev": "webpack-dev-server --inline --progress --port 4200",
+    "postinstall": "webpack --config config/webpack.prod.js --progress --profile --bail",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
